@@ -2,9 +2,9 @@
 
 1\. Среда разработки
 
-•	Ubuntu 16.04.2 LTS (Xenial Xerus) \r\n
-•	PHP 7.0 \r\n
-•	MySQL v5.7 \r\n
+•	Ubuntu 16.04.2 LTS (Xenial Xerus)
+•	PHP 7.0
+•	MySQL v5.7
 
 2\. Создание таблиц базы данных
 
