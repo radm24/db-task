@@ -45,7 +45,7 @@ VALUES ("2019.06.01", "2", "2000"), ("2019.06.01", "3", "2000"), ("2019.06.03", 
 SELECT doctors.full_name, doctors.spec, sum(summ) 
 FROM transactions 
 JOIN doctors ON doctors.id = transactions.doc_id 
-WHERE doc_id = "3" AND transactions.date >= "2019-01-01" 
+WHERE doc_id = "doctor_id" AND transactions.date >= "2019-01-01" 
 HAVING sum(summ) > "2500";
 ```
 
