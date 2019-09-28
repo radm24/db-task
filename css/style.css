@@ -1,0 +1,101 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    color: #fff;
+}
+
+/* Containers */
+.wrapper {
+    background: linear-gradient(to right, #25c481, #25b7c4);
+    min-height: 100vh;
+    padding: 45px;
+}
+
+.rslt-cont, .doc-cont, .tran-cont {
+    margin: 0 auto 40px;
+    max-width: 570px;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.rslt-table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Table Title */
+.table-title {
+    margin: 5px 5px 15px;
+    cursor: pointer;
+}
+
+/* Table */
+table {
+    width: 100%;
+    table-layout: fixed;
+    font-size: 15px;
+    padding: 5px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    cursor: pointer;
+}
+
+thead {
+    background-color: rgba(255,255,255,0.3);
+}
+
+tbody tr:hover {
+    background-color: rgba(255,255,255,0.3);
+}
+
+th {
+    padding: 17px 15px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+td {
+    padding: 12px 15px;
+    text-align: center;
+}
+
+/* Button */
+.trigger {
+    display: block;
+    padding: 17px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid rgb(76, 179, 166);
+    border-radius: 5px;
+    background: #25BAB5;
+    box-shadow: 2px 2px 5px rgb(136, 136, 136);
+    transition: 1s;
+}
+
+.trigger:hover {
+    background: #25C18F;
+    border-color: rgb(76, 179, 116);
+}
+
+.hidden {
+    display: none;
+}
+
+/* Fonts */
+@font-face {
+    font-family: "Roboto";
+    src: url("./fonts/Roboto-Regular.ttf");
+}
