@@ -31,16 +31,16 @@ CREATE TABLE transactions (
 3\. Заполнение таблиц
 
 ```
-INSERT INTO doctors (full_name, spec) VALUES ("Иванов И.А.", "Терапевт"), ("Сергеев А.А.", "Хирург"), ("Малинина Ю.И.", "Массажист");
+INSERT INTO doctors (full_name, spec)  VALUES ("Иванов И.А.", "Терапевт"), ("Сергеев А.А.", "Хирург"), ("Малинина Ю.И.", "Массажист");
 
-INSERT INTO transactions (date, doc_id, summ) VALUES ("2019.06.01", "2", "2000"), ("2019.06.01", "3", "2000"), ("2019.06.03", "1", "1000"), ("2019.06.03", "2", "500"), ("2019.06.04", "1", "2000"), ("2019.06.07", "3", "2000"), ("2018.01.01", "2", "1000"), ("2017.03.02", "1", "1500");
+INSERT INTO transactions (date, doc_id, summ)  VALUES ("2019.06.01", "2", "2000"), ("2019.06.01", "3", "2000"), ("2019.06.03", "1", "1000"), ("2019.06.03", "2", "500"), ("2019.06.04", "1", "2000"), ("2019.06.07", "3", "2000"), ("2018.01.01", "2", "1000"), ("2017.03.02", "1", "1500");
 ```
 
 4\. Извлечение необходимого результата
 
 Запрос для каждого врача с индивидуальным doctor_id:
 ```
-SELECT doctors.full_name, doctors.spec, sum(summ) FROM transactions JOIN doctors ON doctors.id = transactions.doc_id WHERE doc_id = "doctor_id" AND transactions.date >= "2019-01-01" HAVING sum(summ) > "2500";
+SELECT doctors.full_name, doctors.spec, sum(summ)  FROM transactions  JOIN doctors  ON doctors.id = transactions.doc_id  WHERE doc_id = "doctor_id" AND transactions.date >= "2019-01-01"  HAVING sum(summ) > "2500";
 ```
 
 Конечный результат - http://a0292010.xsph.ru/
